@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<!--
+ * Index page for SoccerDemo App
+ * 
+ * @package 	SoccerDemo
+ * @author		Cristian Gómez Alvarez <cristianpark@gmail.com>
+ * @date		June 09/2013
+ *
+-->
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>..:: Hincha Digital ::..</title>
+	<meta name="viewport" content="height=device-height; width=device-width; initial-scale=0.9; maximum-scale=0.9;">
+	
+	<link rel="stylesheet" href="lib/css/jquery/jquery.mobile-1.3.1.min.css">
+	<link rel="stylesheet" href="lib/css/jquery/plugins/simpledialog.min.css">
+	
+	<script src="lib/js/jquery/jquery-1.10.1.min.js"></script>
+	<script src="lib/js/jquery/jquery.mobile-1.3.1.min.js"></script>
+	<script src="lib/js/jquery/plugins/simpledialog2.min.js"></script>
+	<script src="lib/js/jquery/plugins/jquery.nicescroll.min.js"></script>
+	
+	<!-- Styles defined-->
+	<link rel="stylesheet" href="lib/css/main.css">
+	<link rel="shortcut icon" href="lib/img/icons/favicon.png" type="image/x-icon" />
+	
+	<!-- JavaScript code files-->
+	<script src="lib/js/common.js"></script>
+	<script src="lib/js/config.js"></script>
+	<script src="lib/js/translate.js"></script>
+	<script src="lib/js/number_format.js"></script>
+	<script src="lib/js/main.js"></script>
+</head> 
+
+<body>
+	<!-- Login page -->
+	<div data-role="page" id="PGlogin" class="jqm-page">
+		<div data-role="content" class="DVcontentfoot">
+			<section id="STlogin" style="text-align: center" align="center">
+				<figure id="FGloginTitle">
+					<img src="lib/img/misc/title.png" />	
+				</figure>
+				
+				<table id="TBlogin">
+				<tr>
+					<td width="5%" nowrap><strong>Email</strong></td>
+					<td>
+						<input type="text" name="ITlogin" id="ITlogin" class="ITcss" size="14em" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><hr style="width: 100%; height: 0.1em; background: #A0A0A0;"></td>
+				</tr>
+				<tr>
+					<td width="5%" nowrap><strong>Password</strong></td>
+					<td>
+						<input type="password" class="ITcss" name="ITpassword" id="ITpassword" size="10" />
+					</td>
+				</tr>
+				</table>
+				
+				<br/>
+				<figure>
+					<a href="#PGterms"><img src="lib/img/login/button.png" /></a>
+				</figure>
+			</section>
+		</div><!-- /content -->
+	</div>
+	<!-- End login page -->
+	
+	<!-- Terms page -->
+	<div data-role="page" id="PGterms" class="jqm-page" data-theme="a">
+		<div data-role="content" class="DVcontentfoot">
+			<div id="DVterms"></div>
+			
+			<div style="text-align: center;">
+				<p>
+				<input type="checkbox" name="CBacceptTerms" id="CBacceptTerms" />
+				<label for="CBacceptTerms"><span class="TS acceptt ucfirst">text</span></label>
+				</p>
+			
+				<a href="#PGmenu" id="HRacceptTerms" class="DVbuttonGrass" style="color: white; text-decoration: none; width: 25px;">&nbsp;&nbsp;<span class="TW ucfirst">Send</span>&nbsp;&nbsp;</a>
+			</div>
+		</div><!-- /content -->
+	</div>
+	<!-- End terms page -->
+	
+	<!-- Menu page -->
+	<div data-role="page" id="PGmenu" class="jqm-page" data-theme="a">
+		<div data-role="content" class="DVcontentfoot">
+			<figure class="FGtitle">
+				<img id="IMtitle" src="lib/img/misc/title.png" />
+				<img id="IMune" src="lib/img/brands/une.png" />
+			</figure>
+			
+			<section id="STmenu">
+				<div id="DVnavegacion" class="ui-grid-b">
+					<figure class="ui-block-a FGmenu">
+						<a href="#PGbets"><img src="lib/img/menu/01.png" /></a>
+						<figcaption class="FCmenu">
+							<h2 class="SPmenu"><span class="upper">Polla</span></h2>
+						</figcaption>
+					</figure>
+					<figure class="ui-block-b FGmenu">
+						<a href="#PGformation"><img src="lib/img/menu/02.png" /></a>
+						<figcaption class="FCmenu">
+							<h2 class="SPmenu"><span class="upper">Planteamiento táctico</span></h2>
+						</figcaption>
+					</figure>
+					<figure class="ui-block-c FGmenu">
+						<a href="#PGplayers"><img src="lib/img/menu/03.png" /></a>
+						<figcaption class="FCmenu">
+							<h2 class="SPmenu"><span class="upper">Alineación</span></h2>
+						</figcaption>
+					</figure>
+					<figure class="ui-block-a FGmenu">
+						<a href="#PGperformance"><img src="lib/img/menu/04.png" /></a>
+						<figcaption class="FCmenu">
+							<h2 class="SPmenu"><span class="upper">Calificación</span></h2>
+						</figcaption>
+					</figure>
+					<figure class="ui-block-b FGmenu">
+						<a href="#PGterms"><img src="lib/img/menu/05.png" /></a>
+						<figcaption class="FCmenu">
+							<h2 class="SPmenu"><span class="upper">Reglamento</span></h2>
+						</figcaption>
+					</figure>
+					<figure class="ui-block-c FGmenu">
+						<a href="#"><img src="lib/img/menu/06.png" /></a>
+						<figcaption class="FCmenu">
+							<h2 class="SPmenu"><span class="upper">Responsabilidad social empresarial</span></h2>
+						</figcaption>
+					</figure>
+					<figure class="ui-block-a FGmenu">
+						<a href="http://www.vozdelsocio.com" target="_blank"><img src="lib/img/menu/07.png" /></a>
+						<figcaption class="FCmenu">
+							<h2 class="SPmenu"><span class="upper">Encuesta</span></h2>
+						</figcaption>
+					</figure>
+					<figure class="ui-block-b FGmenu">
+						<a href="#PGranking"><img src="lib/img/menu/08.png" /></a>
+						<figcaption class="FCmenu">
+							<h2 class="SPmenu"><span class="upper">Clasificación</span></h2>
+						</figcaption>
+					</figure>
+				</div>
+			</section>
+		</div><!-- /content -->
+		
+		<div data-role="footer" data-position="fixed" class="ui-bar">
+			<div id="DVesp" class="language languageES"></div>
+			<div id="DVeng" class="language languageEN"></div>
+			<a href="#DVrestore" data-rel="popup" id="HRrestore"><span class="TW ucfirst">Restore</span></a>
+			<!-- Restore popup -->
+			<div data-role="popup" id="DVrestore">
+				<p class="TS restored ucfirst">text</p>
+				<a href="#" data-rel="back" data-role="button">OK</a>
+		  	</div>
+		</div>
+	</div><!-- /page -->
+	<!-- End menu page -->
+	
+	<!-- Bets page -->
+	<div data-role="page" id="PGbets" class="jqm-page">
+		<div data-role="footer">
+			<a href="#" data-icon="back" data-rel="back"><span class="TW ucfirst">Back</span></a>
+		</div><!-- /header -->
+	
+		<div data-role="content" class="DVcontenthead">
+			<section>
+				<figure class="FGtitle">
+					<img src="lib/img/misc/title.png" />
+				</figure>
+				
+				<table id="TBbets">
+					<tr>
+						<th>Colombia</th>
+						<td>
+							<input type="text" size="2" maxlength="2" />
+						</td>
+						<th>vs</th>
+						<th>España</th>
+						<td>
+							<input type="text" size="2" maxlength="2" />
+						</td>
+					</tr>
+					<tr>
+						<th>Camerún</th>
+						<td>
+							<input type="text" size="2" maxlength="2" />
+						</td>
+						<th>vs</th>
+						<th>Ecuador</th>
+						<td>
+							<input type="text" size="2" maxlength="2" />
+						</td>
+					</tr>
+					<tr>
+						<th>Inglaterra</th>
+						<td>
+							<input type="text" size="2" maxlength="2" />
+						</td>
+						<th>vs</th>
+						<th>Pakistán</th>
+						<td>
+							<input type="text" size="2" maxlength="2" />
+						</td>
+					</tr>
+					<tr>
+						<th>Jamaica</th>
+						<td>
+							<input type="text" size="2" maxlength="2" />
+						</td>
+						<th>vs</th>
+						<th>Escocia</th>
+						<td>
+							<input type="text" size="2" maxlength="2" />
+						</td>
+					</tr>
+					<tr>
+						<th>Islas Caimán</th>
+						<td>
+							<input type="text" size="2" maxlength="2" />
+						</td>
+						<th>vs</th>
+						<th>Kuwait</th>
+						<td>
+							<input type="text" size="2" maxlength="2" />
+						</td>
+					</tr>
+					<tr>
+						<th>Zimbabwe</th>
+						<td>
+							<input type="text" size="2" maxlength="2" />
+						</td>
+						<th>vs</th>
+						<th>Alemania</th>
+						<td>
+							<input type="text" size="2" maxlength="2" />
+						</td>
+					</tr>
+					<tr>
+						<th>Tahití</th>
+						<td>
+							<input type="text" size="2" maxlength="2" />
+						</td>
+						<th>vs</th>
+						<th>Venezuela</th>
+						<td>
+							<input type="text" size="2" maxlength="2" />
+						</td>
+					</tr>
+					<tr>
+						<th>Brasil</th>
+						<td>
+							<input type="text" size="2" maxlength="2" />
+						</td>
+						<th>vs</th>
+						<th>Italia</th>
+						<td>
+							<input type="text" size="2" maxlength="2" />
+						</td>
+					</tr>
+				</table>
+				<div style="margin-left:auto; margin-right:auto; margin-top:2em;">
+					<a href="#PGmenu" class="ui-block-a DVbuttonGrass" style="color: white; text-decoration: none;"><span class="TW ucfirst">Guardar</span></a>
+				</div>
+			</section>
+		</div><!-- /content -->
+	</div>
+	<!-- End bets page -->
+	
+	<!-- Formation page -->
+	<div data-role="page" id="PGformation" class="jqm-page" data-theme="a">
+		<div data-role="footer">
+			<a href="#" data-icon="back" data-rel="back"><span class="TW ucfirst">Back</span></a>
+		</div><!-- /header -->
+	
+		<div data-role="content" class="DVcontenthead">
+			<section>
+				<figure class="FGtitle">
+					<img src="lib/img/misc/title.png" />
+				</figure>
+				
+				<section id="STformations">
+					<div id="DVformations"></div>
+				</section>
+				<div style="margin-left:auto; margin-right:auto; margin-top:2em;">
+					<a href="#PGplayers" class="ui-block-a DVbuttonGrass" style="color: white; text-decoration: none;"><span class="TW ucfirst">Jugadores</span></a>
+				</div>
+			</section>
+		</div><!-- /content -->
+	</div>
+	<!-- End formation page -->
+	
+	<!-- Players page -->
+	<div data-role="page" id="PGplayers" class="jqm-page" data-theme="a">
+		<div data-role="footer">
+			<a href="#PGmenu" data-icon="back"><span class="TW ucfirst">Back</span></a>
+			<span id="SPformation" style="text-weight: bold; text-align: center; border: 2px solid #FFFFFF; position: absolute; right: 2em;"></span>
+		</div><!-- /header -->
+	
+		<div data-role="content" class="DVcontenthead">
+			<section>
+				<figure id="FGplayersField">
+					<img src="lib/img/misc/soccerField.png" />
+				</figure>
+				
+				<section id="STplayers">
+					<div id="DVpositions"></div>
+					<div data-role="popup" id="DVselectPlayer"></div>
+					&nbsp;
+				</section>
+			</section>
+		</div><!-- /content -->
+	</div>
+	<!-- End players page -->
+	
+	<!-- Performance page -->
+	<div data-role="page" id="PGperformance" class="jqm-page" data-theme="a">
+		<div data-role="footer">
+			<a href="#PGmenu" data-icon="back"><span class="TW ucfirst">Back</span></a>
+		</div><!-- /header -->
+		
+		<div data-role="popup" id="DVshowReferee">
+			<figure>
+				<img id="IMreferee" src="lib/img/performance/referee.png" />
+				<figcaption id="FCreferee" class="FCperformance">
+					<h2 style="font-size: 1em; margin-top: 0em">Oscar Julián Ruiz</h2>
+					<p>Me gusta: <span id="SPrefereeLike">?</span></p>
+					<p>No me gusta: <span id="SPrefereeDislike">?</span></p>
+					
+					<br/>
+					<img class="IMlike" src="lib/img/performance/like.png" />
+					<img class="IMlike" src="lib/img/performance/dislike.png" />
+					
+					<br/><span id="SPclosePopupR">[Cerrar]</span>					
+				</figcaption>
+			</figure>
+		</div>
+		
+		<div data-role="content" class="DVcontenthead">
+			<figure class="FGtitle">
+				<img src="lib/img/misc/title.png" />
+			</figure>
+		
+			<div class="ui-grid-b" width="90%" style="margin-top: 6em; margin-left: auto; margin-right: auto;">
+				<figure class="ui-block-a FGperformance">
+					<a href="#"><img src="lib/img/performance/coach.png" /></a>
+					<figcaption class="FCperformance">
+						<h2 style="font-size: 1em; margin-top: 0em"><span class="upper">Técnicos</span></h2>
+					</figcaption>
+				</figure>
+				<figure class="ui-block-c FGperformance">
+					<a href="#PGperformanceP"><img src="lib/img/performance/player.png" /></a>
+					<figcaption class="FCperformance">
+						<h2 style="font-size: 1em; margin-top: 0em"><span class="upper">Jugadores</span></h2>
+					</figcaption>
+				</figure>
+				<figure class="ui-block-b FGperformance">
+					<a href="#DVshowReferee" data-rel="popup"><img src="lib/img/performance/referee.png" /></a>
+					<figcaption class="FCperformance">
+						<h2 style="font-size: 1em; margin-top: 0em"><span class="upper">Arbitros</span></h2>
+					</figcaption>
+				</figure>
+			</div>
+		</div><!-- /content -->
+	</div>
+	<!-- End performance page -->
+	
+	<!-- Players Performance page -->
+	<div data-role="page" id="PGperformanceP" class="jqm-page" data-theme="a">
+		<div data-role="footer">
+			<a href="#PGmenu" data-icon="back"><span class="TW ucfirst">Back</span></a>
+		</div><!-- /header -->
+	
+		<div data-role="content" class="DVcontenthead">
+			<section>
+				<figure class="FGtitle">
+					<img src="lib/img/misc/title.png" />
+				</figure>
+				
+				<section id="STperformance">
+					
+				</section>
+			</section>
+		</div><!-- /content -->
+	</div>
+	<!-- End performance page -->	
+	
+	<!-- Referees Performance page -->
+	<div data-role="page" id="PGperformanceR" class="jqm-page" data-theme="a">
+		<div data-role="footer">
+			<a href="#PGmenu" data-icon="back"><span class="TW ucfirst">Back</span></a>
+		</div><!-- /header -->
+	
+		<div data-role="content" class="DVcontenthead">
+			<section>
+				<figure class="FGtitle">
+					<img src="lib/img/misc/title.png" />
+				</figure>
+				
+				<section id="STperformance">
+					
+				</section>
+			</section>
+		</div><!-- /content -->
+	</div>
+	<!-- End performance page -->
+	
+	<!-- Ranking page -->
+	<div data-role="page" id="PGranking" class="jqm-page" data-theme="a">
+		<div data-role="footer">
+			<a href="#PGmenu" data-icon="back"><span class="TW ucfirst">Back</span></a>
+		</div><!-- /header -->
+	
+		<div data-role="content" class="DVcontenthead">
+			<section>
+				<figure class="FGtitle">
+					<img src="lib/img/misc/title.png" />
+				</figure>
+				
+				<table id="TBranking">
+					<tr>
+						<th>Nombre</th>
+						<th>Puntos</th>
+					</tr>
+					<tr>
+						<td>Juan Perez</td>
+						<td align="right">78</td>
+					</tr>
+					<tr>
+						<td>Carlos Bedoya</td>
+						<td align="right">75</td>
+					</tr>
+					<tr>
+						<td>Hugo Caicedo</td>
+						<td align="right">68</td>
+					</tr>
+					<tr>
+						<td>Paco Martinez</td>
+						<td align="right">60</td>
+					</tr>
+					<tr>
+						<td>Luis Mcpato</td>
+						<td align="right">50</td>
+					</tr>
+					<tr>
+						<td>Francisco Nájera</td>
+						<td align="right">30</td>
+					</tr>
+				</table>
+			</section>
+		</div><!-- /content -->
+	</div>
+	<!-- End ranking page -->
+<script type="text/javascript" src="http://debug.build.phonegap.com/target/target-script-min.js#8c93e9be-d23f-11e2-84c4-12313d16b935"></script></body>
+
+</html>

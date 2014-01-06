@@ -1,0 +1,363 @@
+/**
+ * Main CSS file
+ * 
+ * @package 	SoccerDemo
+ * @author		Cristian Gómez Alvarez <cristianpark@gmail.com>
+ * @date		June 09/2013
+ *
+**/
+
+.DVcontenthead{
+	background-color: black;
+	background-image: url('../img/misc/grass.png');
+	top: 2.5em;
+	bottom: 0em;
+	color: white;
+	position: absolute;
+	width:99%;
+}
+
+.DVcontentfoot{
+	background-color: black;
+	background-image: url('../img/misc/grass.png');
+	top: 0em;
+	bottom: 0em;
+	color: white;
+	position: absolute;
+	width:99%;
+}
+
+.DVbutton{
+	background-color: #D7DF01;
+	border-radius: 0.5em;
+	color: green;
+	cursor: pointer;
+	/* font-weight: bold; */
+	height: 2.5em;
+	margin: 0.3em 0.3em;
+	padding: 0.5em 0em;
+	text-align: center;
+	text-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+	width: 10em;
+}
+
+.DVbuttonGrass{
+	background-color: #D7DF01;
+	background-image: url('../img/misc/button_tx.png');
+	border-radius: 0.5em;
+	color: white;
+	cursor: pointer;
+	/* font-weight: bold; */
+	height: 2.5em;
+	margin: 0.3em 0.3em;
+	padding: 0.5em 0em;
+	text-align: center;
+	text-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+	width: 10em;
+}
+
+#DVformation{
+	box-shadow: rgba(0,0,0,0.7) 0px 5px 10px;
+}
+
+#DVformations{
+	box-shadow: 5px 5px 5px rgba(0,0,0,1);
+	width: 6em;
+}
+
+#DVnavegation{
+	margin-top: 0em;
+	width: 70%;
+}
+
+#DVselectPlayer{
+	box-shadow: rgba(0,0,0,0.7) 0px 5px 10px;
+}
+
+#DVshowReferee{
+	box-shadow: rgba(0,0,0,0.7) 0px 5px 10px;
+}
+
+#DVterms{
+	height: 20em;
+	overflow-y: auto;
+	text-align: justify;
+	-webkit-overflow-scrolling: touch;
+	width: 80%;
+}
+
+.FCmenu{
+ 	font-size: 0.7em;
+ 	text-align: justify;
+}
+
+.FCperformance{
+ 	font-size: 1.2em;
+ 	text-align: center;
+}
+
+#FGbet{
+	cursor: pointer;
+	height: 2.5em;
+	margin: 0.3em 0.3em 0.3em 0.3em;
+	padding: 0.25em 1em 1em 1em;
+	text-align: center;
+}
+
+#FGloginTitle img{
+	width: 80%;
+	padding-bottom: 3.5em;
+}
+
+.FGmenu img{
+	margin-top: 1em;
+	width: 70%
+}
+
+#FGplayersField{
+	position: absolute;
+	top: 3em;
+	right: -2em;
+	width: 100%;
+}
+
+#FGplayersField img{
+	height: 100%;
+	width: 100%;
+}
+
+.FGperformance{
+	border: solid 2px black;
+	border-radius: 0.5em;
+}
+
+.FGperformance img{
+	border-radius: 0.5em;
+	width: 100%
+}
+
+#FGtickets{
+	text-align: center;
+}
+
+#FGtickets img{
+	width: 100%;
+}
+
+.FGtitle{
+	margin: 0.2em 0em 2em 0em;
+	text-align: center;
+}
+
+.FGtitle img{
+	width: 50%;
+}
+
+.HRplayer {
+    background: #80FF00;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+}
+
+.HRplayer img{
+    width: 100%;
+}
+
+#HRrestore{
+	position: absolute;
+	right: 3em;
+	top: 0em;
+}
+
+header {background: black; height:5em; padding:5px;}
+
+.IMplayer{
+	cursor: pointer;
+}
+
+#IMreferee, #FCreferee
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#IMtitle{
+	width: 50%;
+}
+
+#IMune{
+	width: 40%;
+}
+
+#IMtitle, #IMune{
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.languageES{
+	background: url('../img/language/languages.png') 0 0;
+	cursor: pointer;
+	height:16px;
+	width:23px;
+}
+
+.languageEN{
+	cursor: pointer;
+	background: url('../img/language/languages.png') 0 16px;
+	height:16px;
+	width:23px;
+}
+
+.languageES, .languageEN{
+	display:inline-block;
+	vertical-align: top;
+}
+
+#STformations{
+	background-image: url('../img/misc/soccerField.png');
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 100%;
+}
+
+#STmenu{
+	margin-bottom: 0em;
+}
+
+#STplayers{
+	/*background-image: url('../img/misc/soccerField.png');
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: 90% 100%;
+	*/
+	width: 100%;
+}
+
+#TBbets{
+	background-color: white;
+	border-radius: 0.5em;
+	color: black;
+	margin-left: auto;
+    margin-right: auto;
+	width: 80%;
+}
+
+#TBlogin{
+	background-color: white;
+	border-radius: 0.5em;
+	color: black;
+	margin-left: auto;
+    margin-right: auto;
+	width: 80%;
+}
+
+#TBranking{
+	background-color: #8FBC8F;
+	border: 4px solid black;
+	border-radius: 0.5em;
+	color: white;
+	margin-left: auto;
+    margin-right: auto;
+	width: 80%;
+}
+
+#TBranking th{
+	border: 4px solid black;
+	border-radius: 0.5em;
+}
+
+.ITcss{
+	background-color: #00415E;
+	color: #A0A0A0;
+}
+
+.TBperformance{
+	border: #FFFFFF solid 0.5em;
+	width: 100%
+}
+
+.TBperformance td{
+	border: #FFFFFF solid 0.1em;
+}
+
+.TBperformance th{
+	color: green;
+	background-color: white;
+	text-align: center;
+	font-weight: bold;
+	border: #FFFFFF solid 0.5em;
+}
+
+/* Media Queries *
+@media screen and (orientation:portrait) {
+	.HRplayer {
+	    background: #80FF00;
+	    width: 2.5em;
+	    height: 2.5em;
+	    border-radius: 50%;
+	}
+	
+	.SPmenu{
+		font-size: 1em; 
+		margin-top: 0em
+	} 
+}
+
+@media screen and (orientation:landscape) {
+	.HRplayer {
+	    background: #80FF00;
+	    width: 3em;
+	    height: 3em;
+	    border-radius: 50%;
+	}
+	
+	.SPmenu{
+		font-size: 2em; 
+		margin-top: 0em
+	}
+}
+*/
+
+@media only screen and (max-device-width: 500px) {
+	.HRplayer {
+	    background: #80FF00;
+	    width: 2.5em;
+	    height: 2.5em;
+	    border-radius: 50%;
+	}
+	
+	.SPmenu{
+		font-size: 1em; 
+		margin-top: 0em
+	}
+}
+
+@media only screen and (min-device-width: 501px) and (max-device-width: 800px) {
+	.HRplayer {
+	    background: #80FF00;
+	    width: 3.2em;
+	    height: 3.2em;
+	    border-radius: 50%;
+	}
+	
+	.SPmenu{
+		font-size: 1.4em; 
+		margin-top: 0em
+	}
+}
+
+@media only screen and (min-device-width: 801px) and (max-device-width: 1280px) {
+	.HRplayer {
+	    background: #80FF00;
+	    width: 4em;
+	    height: 4em;
+	    border-radius: 50%;
+	}
+	
+	.SPmenu{
+		font-size: 2.5em; 
+		margin-top: 0em
+	}
+}
